@@ -1,0 +1,194 @@
+/* 
+ * Кто читает этот код, прошу прощения!
+ * Я не особо силен в верстке, правилах семантики и адаптивности
+ * Старался как мог 🙂
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #232323;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    position: relative;
+    margin-top: 50px;
+    left: calc(50% - 500px);
+    border-radius: 15px;
+    height: 1180px;
+    width: 1000px;
+    box-shadow: 0 0 15px rgb(100, 100, 100);
+    transition: transform .5s, box-shadow .5s;
+    margin-bottom: 50px;
+}
+
+article{
+    margin: 0 30px 0 30px;
+}
+
+main:hover{
+    box-shadow: 5px 5px 15px rgb(100, 100, 100);
+    transform: scale(1.015);
+}
+
+header{
+    margin: 30px;
+}
+
+.fa{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    transition: background-image .2s;
+}
+
+.fa-phone{
+    background-image: url('./img/phone.png');
+}
+
+.fa-phone:hover{
+    background-image: url('./img/phone_active.png');
+}
+
+.fa-linkedin{
+    background-image: url('./img/linkedin.png');
+}
+
+.fa-linkedin:hover{
+    background-image: url('./img/linkedin_active.png');
+}
+
+.fa-telegram{
+    background-image: url('./img/telegram.png');
+}
+
+.fa-telegram:hover{
+    background-image: url('./img/telegram_active.png');
+}
+
+.fa-github{
+    margin-bottom: -3px;
+    background-image: url('./img/github.png');
+}
+
+.fa-github:hover{
+    background-image: url('./img/github_active.png');
+}
+
+.fa-mail{
+    margin-bottom: -4px;
+    background-image: url('./img/gmail.png');
+}
+
+.fa-mail:hover{
+    background-image: url('./img/gmail_active.png');
+}
+
+#linkedin:hover{
+    color: #0a65c2;
+}
+
+#telegram:hover{
+    color: #32a8dc;
+}
+
+#github:hover, #phone:hover{
+    color: #474747;
+}
+
+#mail:hover{
+    color: #d54b3d;
+}
+
+#my-name{
+    padding-left: 18px;
+}
+
+#additional-info{
+    padding-left: 25px;
+    margin-top: -10px;
+}
+
+.grid{
+    display: grid;
+}
+
+.main-grid{
+    grid-template-rows: 24% 74%;
+}
+
+.header-grid{
+    grid-template-columns: 70% 30%;
+}
+
+.contacts-block{
+    float: right;
+}
+
+.contacts{
+    padding-left: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+#skills-block{
+    display: inline-block;
+}
+
+.skills{
+    font-size: 18px;
+    margin-left: 20px;
+    padding-left: 15px;
+    list-style-type: none;
+    border-left: 4px solid;
+    width: 500px   
+}
+
+.skills > li{
+    margin-bottom: 10px;
+    transition: padding-left .2s;
+}
+
+.skills > li:hover{
+    padding-left: 15px;
+}
+
+.contacts > li{
+    display: block;
+    margin: 0 10px 5px 0;
+    list-style: none outside none;
+    transition: color 0.1s;
+}
+
+.contacts > li > a{
+    color: inherit;
+    transition: inherit;
+}
+
+#experience-block > h3{
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+#experience-block > p{
+    margin-top: -7px;
+    margin-left: 10px;
+    text-indent: 18px;
+}
+
+#about-me-block{
+    margin-top: 60px;
+    padding: 15px 0 0 15px;
+    float: right;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    width: 290px;
+    text-align: right;
+}
